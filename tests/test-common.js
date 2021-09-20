@@ -5,7 +5,7 @@
 const EarlReport = require('./earl-report');
 const benchmark = require('benchmark');
 const join = require('join-path-js');
-const rdfCanonize = require('rdf-canonize');
+const rdfCanonize = require('@digitalcredentials/rdf-canonize');
 const {prependBase} = require('../lib/url');
 
 module.exports = function(options) {
