@@ -1,9 +1,5 @@
-jsonld.js
+JSON-LD Javascript Library _(@digitalcredentials/jsonld.js)_
 =========
-
-[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/jsonld.js/Node.js%20CI)](https://github.com/digitalbazaar/jsonld.js/actions?query=workflow%3A%22Node.js+CI%22)
-[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/jsonld.js)](https://codecov.io/gh/digitalbazaar/jsonld.js)
-[![Dependency Status](https://img.shields.io/david/digitalbazaar/jsonld.js.svg)](https://david-dm.org/digitalbazaar/jsonld.js)
 
 Introduction
 ------------
@@ -87,11 +83,11 @@ Installation
 ### Node.js + npm
 
 ```
-npm install jsonld
+npm install @digitalcredentials/jsonld
 ```
 
 ```js
-const jsonld = require('jsonld');
+const jsonld = require('@digitalcredentials/jsonld');
 ```
 
 ### Browser (bundler) + npm
