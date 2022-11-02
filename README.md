@@ -342,6 +342,24 @@ It is recommended to set a default `user-agent` header for Node.js
 applications. The default for the default Node.js document loader is
 `jsonld.js`.
 
+### Safe Mode
+
+A common use case is to avoid JSON-LD constructs that will result in lossy
+behavior. The JSON-LD specifications have notes about when data is dropped.
+This can be especially important when calling [`canonize`][] in order to
+digitally sign data. A special "safe mode" is available that will detect these
+situations and cause processing to fail.
+
+**Note**: This mode is designed to be the common way that digital signing and
+similar applications use this library.
+
+The `safe` options flag set to `true` enables this behavior:
+
+```js
+// expand a document in safe mode
+const expanded = await jsonld.expand(data, {safe: true});
+```
+
 Related Modules
 ---------------
 
@@ -451,6 +469,16 @@ Use a command line with a test suite and a benchmark flag:
 
     JSONLD_TESTS=/tmp/benchmark-manifest.jsonld JSONLD_BENCHMARK=1 npm test
 
+EARL reports with benchmark data can be generated with an optional environment
+details:
+
+    JSONLD_TESTS=`pwd`/../json-ld.org/benchmarks/b001-manifiest.jsonld JSONLD_BENCHMARK=1 EARL=earl-test.jsonld TEST_ENV=1 npm test
+
+See `tests/test.js` for more `TEST_ENV` control and options.
+
+These reports can be compared with the `benchmarks/compare/` tool and at the
+[JSON-LD Benchmarks][] site.
+
 [Digital Bazaar]: https://digitalbazaar.com/
 
 [JSON-LD 1.0 API]: http://www.w3.org/TR/2014/REC-json-ld-api-20140116/
@@ -473,6 +501,7 @@ Use a command line with a test suite and a benchmark flag:
 [JSON-LD WG Framing latest]: https://w3c.github.io/json-ld-framing/
 [JSON-LD WG latest]: https://w3c.github.io/json-ld-syntax/
 
+[JSON-LD Benchmarks]: https://json-ld.org/benchmarks/
 [JSON-LD Processor Conformance]: https://w3c.github.io/json-ld-api/reports
 [JSON-LD WG]: https://www.w3.org/2018/json-ld-wg/
 [JSON-LD]: https://json-ld.org/
