@@ -1,5 +1,9 @@
 # jsonld ChangeLog
 
+## 6.0.0 - 2023-06-16
+### Changed
+- Clear cache on each operation.
+
 ## 5.2.0 - 2021-04-07
 
 ### Changed
