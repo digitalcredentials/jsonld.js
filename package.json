@@ -30,7 +30,8 @@
     "lib/**/*.js"
   ],
   "dependencies": {
-    "@digitalbazaar/http-client": "^4.1.0",
+    "@digitalbazaar/http-client": "^4.1.1",
+    "@digitalcredentials/rdf-canonize": "^1.0.0",
     "canonicalize": "^1.0.1",
     "lru-cache": "^6.0.0",
     "rdf-canonize": "^4.0.1"
