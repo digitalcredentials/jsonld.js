@@ -1,5 +1,8 @@
 # jsonld ChangeLog
 
+## `#v10.1.x` - Temporary branch until https://github.com/digitalbazaar/jsonld.js/pull/528 gets merged upstream.
+Tracks DB's v8.3.2 plus the `react-native` section changes.
+
 ## 8.3.3 -
 
 ### Added
