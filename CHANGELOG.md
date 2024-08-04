@@ -1,4 +1,10 @@
-# jsonld ChangeLog
+# @digitalcredentials/jsonld ChangeLog
+
+## 9.0.0 -
+
+### Changed
+- **BREAKING**: Re-fork as `@digitalcredentials/jsonld` (to fix upstream http-client export error).
+- Use `@digitalcredentials/http-client@5.0.0` fork.
 
 ## 8.3.2 - 2023-12-06
 
