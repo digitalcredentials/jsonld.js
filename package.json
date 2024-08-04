@@ -1,8 +1,8 @@
 {
-  "name": "jsonld",
+  "name": "@digitalcredentials/jsonld",
   "version": "8.3.3-0",
   "description": "A JSON-LD Processor and API implementation in JavaScript.",
-  "homepage": "https://github.com/digitalbazaar/jsonld.js",
+  "homepage": "https://github.com/digitalcredentials/jsonld.js",
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/jsonld.js"
+    "url": "https://github.com/digitalcredentials/jsonld.js"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/jsonld.js/issues",
+    "url": "https://github.com/digitalcredentials/jsonld.js/issues",
     "email": "support@digitalbazaar.com"
   },
   "license": "BSD-3-Clause",
@@ -29,7 +29,7 @@
     "lib/**/*.js"
   ],
   "dependencies": {
-    "@digitalbazaar/http-client": "^3.4.1",
+    "@digitalcredentials/http-client": "^5.0.1",
     "canonicalize": "^1.0.1",
     "lru-cache": "^6.0.0",
     "rdf-canonize": "^3.4.0"
